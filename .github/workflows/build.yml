@@ -19,15 +19,16 @@ jobs:
        sudo apt-get install  qtcreator qt5-default libqt5serialport5-dev qtquickcontrols2-5-dev qtmultimedia5-dev libqt5multimediawidgets5 libqt5multimedia5-plugins libqt5multimedia5 qtdeclarative5-dev
        mkdir build
        
-   - name: qbuild
-     run: |
-      cd build
-      pwd
-      qmake ..
+    - name: qbuild
+      run: |
+       cd build
+       pwd
+       qmake ..
+       
     - name: make
       run: |
-      pwd
-      make
+       pwd
+       make
     - name: make check
       run: make check
     - name: make distcheck
