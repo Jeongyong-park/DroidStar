@@ -16,7 +16,7 @@ jobs:
     - name: prepare
       run: |
        sudo apt update
-       sudo apt-get install libqt5*
+       sudo apt-get install  qtcreator qt5-default qtquickcontrols2-5-dev qtmultimedia5-dev libqt5multimediawidgets5 libqt5multimedia5-plugins libqt5multimedia5 qtdeclarative5-dev
        mkdir build
        cd build
        qmake ..
